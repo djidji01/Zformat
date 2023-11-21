@@ -34,10 +34,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace Hoa\Zformat;
+namespace igorora\Zformat;
 
 /**
- * Class \Hoa\Zformat\Parameter.
+ * Class \igorora\Zformat\Parameter.
  *
  * Provide a class parameters support.
  *
@@ -89,7 +89,7 @@ class Parameter
      * @param   mixed  $owner         Owner name or instance.
      * @param   array  $keywords      Keywords.
      * @param   array  $parameters    Parameters.
-     * @throws  \Hoa\Zformat\Exception
+     * @throws  \igorora\Zformat\Exception
      */
     public function __construct(
         $owner,
@@ -100,7 +100,7 @@ class Parameter
             if (!($owner instanceof Parameterizable)) {
                 throw new Exception(
                     'Only parameterizable object can have parameter; ' .
-                    '%s does implement \Hoa\Zformat\Parameterizable.',
+                    '%s does implement \igorora\Zformat\Parameterizable.',
                     0,
                     get_class($owner)
                 );
@@ -110,10 +110,10 @@ class Parameter
         } else {
             $reflection = new \ReflectionClass($owner);
 
-            if (false === $reflection->implementsInterface('\Hoa\Zformat\Parameterizable')) {
+            if (false === $reflection->implementsInterface('\igorora\Zformat\Parameterizable')) {
                 throw new Exception(
                     'Only parameterizable object can have parameter; ' .
-                    '%s does implement \Hoa\Zformat\Parameterizable.',
+                    '%s does implement \igorora\Zformat\Parameterizable.',
                     1,
                     $owner
                 );
@@ -176,7 +176,7 @@ class Parameter
      *
      * @param   array  $parameters    Parameters to set.
      * @return  void
-     * @throws  \Hoa\Zformat\Exception
+     * @throws  \igorora\Zformat\Exception
      */
     private function setDefault(array $parameters)
     {
@@ -332,7 +332,7 @@ class Parameter
      *
      * @param   array   $keywords    Keywords.
      * @return  void
-     * @throws  \Hoa\Zformat\Exception
+     * @throws  \igorora\Zformat\Exception
      */
     public function setKeywords($keywords)
     {
@@ -481,7 +481,7 @@ class Parameter
      *
      * @param   string  $value    Parameter value.
      * @return  string
-     * @throws  \Hoa\Zformat\Exception
+     * @throws  \igorora\Zformat\Exception
      */
     public function zFormat($value)
     {

@@ -34,18 +34,18 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace Hoa\Zformat;
+namespace igorora\Zformat;
 
-use Hoa\Exception as HoaException;
+use igorora\Exception\Exception as IgororaException;
 
 /**
- * Class \Hoa\Zformat\Exception.
+ * Class \igorora\Zformat\Exception.
  *
- * Extending the \Hoa\Exception\Exception class.
+ * Extending the \igorora\Exception\Exception class.
  *
  * @copyright  Copyright © 2007-2017 Hoa community
  * @license    New BSD License
  */
-class Exception extends HoaException
+class Exception extends IgororaException
 {
 }

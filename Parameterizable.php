@@ -34,10 +34,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace Hoa\Zformat;
+namespace igorora\Zformat;
 
 /**
- * Interface \Hoa\Zformat\Parameterizable.
+ * Interface \igorora\Zformat\Parameterizable.
  *
  * Interface representing a class with zFormat parameters.
  *
@@ -49,7 +49,7 @@ interface Parameterizable
     /**
      * Get parameters.
      *
-     * @return  \Hoa\Zformat\Parameter
+     * @return  \igorora\Zformat\Parameter
      */
     public function getParameters();
 }
